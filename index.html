@@ -17,7 +17,7 @@
 		<div ng-repeat="post in posts | orderBy:'-upvotes'">
 			<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(post)"></span>
 			{{post.upvotes}}
-			<span style="font-size:20px; margin-left:15px;">
+			<span style="font-size:25px; margin-left:15px;">
 			<a ng-show="post.link" href="{{post.link}}">
 				{{post.title}} 
 			</a>
@@ -27,7 +27,7 @@
 			</span>
 		</div>
 
-		<form ng-submit="addPost()" style="margin-top:30px;">
+		<form ng-submit="addPost()" style="margin-top:50px;">
 			<h3>Add a new post</h3>
 
 		<div class="form-group">
