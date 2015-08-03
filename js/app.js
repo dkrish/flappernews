@@ -44,6 +44,8 @@ app.config([
 '$urlRouterProvider',
 function($stateProvider, $urlRouterProvider) {
 
+	$urlRouterProvider.otherwise('/home');
+	
 	$stateProvider
 		.state('home', {
 			url: '/home',
@@ -57,7 +59,7 @@ function($stateProvider, $urlRouterProvider) {
 			controller: 'MainCtrl'
 		});
 
-	$urlRouterProvider.otherwise('home');
+	
 }]);
 
 app.controller('PostsCtrl', [
